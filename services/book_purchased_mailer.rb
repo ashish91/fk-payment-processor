@@ -1,6 +1,6 @@
 require_relative './mailer.rb'
 
-class BookPurchaseMailer < Mailer
+class BookPurchasedMailer < Mailer
   def self.mail(book:)
     super("Printing mailing label.")
   end

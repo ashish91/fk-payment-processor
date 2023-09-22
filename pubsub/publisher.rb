@@ -5,8 +5,8 @@ class Publisher
   end
 
   def register_subscriber(subscriber, event)
-    @subscriptions ||= []
-    @subscriptions.push(subscriber)
+    @subscriptions[event] ||= []
+    @subscriptions[event].push(subscriber)
   end
 
   def broadcast(event, item, payload={})

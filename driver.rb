@@ -1,3 +1,6 @@
+#!/usr/bin/ruby
+require File.join(Dir.pwd, 'require_tree')
+
 publisher = Seed.init_publisher
 Seed.init_subscribers(publisher: publisher)
 

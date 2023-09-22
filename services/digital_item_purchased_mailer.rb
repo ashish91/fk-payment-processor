@@ -1,7 +1,7 @@
 require_relative './mailer.rb'
 
-class DigitalItemPurchaseMailer < Mailer
-  def self.mail(book:)
+class DigitalItemPurchasedMailer < Mailer
+  def self.mail(item:)
     super("Sending email to download digital items.")
   end
 end
